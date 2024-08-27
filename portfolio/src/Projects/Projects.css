@@ -1,0 +1,118 @@
+.project-container {
+    transition-duration: 0.5s;
+    scroll-behavior: smooth;
+    padding-top: 5px;
+  }
+  
+  .project-grid {
+    display: block;
+    column-gap: 10px;
+  }
+  
+  .project-heading {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    padding-left: 25px;
+    /* text-decoration-line: underline;
+    text-decoration-color: rgba(207, 0, 0, 0.713);
+    text-decoration-thickness: 5px; */
+    margin: 0;
+  
+  }
+  
+  .project-section {
+    display: block;
+    padding-left: 25px;
+    /* text-align: center; */
+  }
+  
+  .project-title {
+    display: block;
+    text-align: center;
+    font-size: 38px;
+    /* font-family: 'Roboto' ; */
+  }
+  
+  .video-preview {
+    max-width: 100%;
+    width: 1250px;
+    height: auto;
+    /* display: block;
+    text-align: center; */
+  }
+  
+  .video-section{
+    display: block;
+    text-align: center;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+  }
+  .github-button {
+    display: flex;
+    justify-content: center; 
+    text-align: center; 
+    font-size: 24px;
+    background-color: rgba(207, 0, 0, 0.713);
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border-radius: 8px;
+    border-color: transparent;
+    color: white;
+    font-weight: bold;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .info-text{
+    font-size: 24px;
+  }
+  
+  .technology-text{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .github-button:hover {
+    background-color: rgba(161, 0, 0, 0.713);
+  }
+  
+  .dark-mode .project-container {
+    background-color: #1a1a1a;
+    color: white;
+  }
+  
+  
+  
+  
+  @media screen and (max-width: 768px) {
+    .project-section {
+      padding-left: 2px;
+    }
+    .project-heading {
+      font-size: 28px;
+      padding-left: 7px;
+      text-align: center;
+    }
+  
+    .project-title {
+      font-size: 20px; 
+      text-align: center;
+    }
+  
+    .github-button {
+      font-size: 18px; 
+    }
+  
+    .info-section{
+      display: block;
+      text-align: center;
+    }
+  }

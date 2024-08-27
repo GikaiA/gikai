@@ -1,0 +1,50 @@
+.skills{
+    padding-bottom: 20px;
+    margin: 0;
+    transition-duration: 0.5s;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory ;
+}
+
+
+.skills-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 35px;
+  padding-left: 25px;
+  /* text-decoration-line: underline;
+  text-decoration-color: rgba(207, 0, 0, 0.713);
+  text-decoration-thickness: 5px; */
+  margin: 0;
+}
+
+.skills-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skill-icon {
+  width: 200px;
+  height: 200px;
+}
+
+.dark-mode .skills{
+  background-color: #1a1a1a;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .skills-title {
+      font-size: 28px; /* Adjust font size for smaller screens */
+      text-align: center;
+    }
+
+    .skills-section{
+        display: block;
+        text-align: center;
+    }
+  
+    .skill-icon {
+      width: 100px; /* Adjust icon size for smaller screens */
+      height: 100px;
+    }
+  }

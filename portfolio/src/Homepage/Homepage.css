@@ -1,0 +1,78 @@
+
+.homepage-section{
+    transition-duration: 0.5s;
+    }
+    
+    .header-section {
+      display: block;
+      justify-content: center;
+      top: 50%;
+      left: 50%;
+      text-align: center;
+      padding-top: 100px;
+    }
+    
+    .Typewriter{
+        font-size: 36px;
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+    
+    .Typewriter__cursor{
+      color: rgba(207, 0, 0, 0.713);
+    }
+    .name-title {
+      color: grey;
+    }
+    
+    .pfp {
+      max-width: 100%; /* Make the image responsive */
+      height: auto; /* Maintain aspect ratio */
+      width: 500px;
+    }
+    
+    .social-icon-section{
+      display: block;
+      margin: 13px 2px;
+    
+    }
+    
+    .linkedin-icon{
+      margin-left: 2px;
+    }
+    
+    .download-button-section{
+      padding-bottom: 20px;
+    }
+    .download-button{
+      background-color: rgba(207, 0, 0, 0.713);
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+      transition-duration: 0.4s;
+      border-radius: 8px;
+      border-color: transparent;
+    }
+    
+    .download-button:hover{
+      background-color: rgba(161, 0, 0, 0.713);
+    }
+    
+    
+    .dark-mode .homepage-section{
+      background-color: #1a1a1a;
+    }
+    
+    
+    /* Media query for smaller screens */
+    @media screen and (max-width: 768px) {
+      .header-section {
+          padding-top: 50px; /* Adjust padding for smaller screens */
+      }
+    
+      .Typewriter {
+          font-size: 21px; /* Adjust font size for smaller screens */
+      }
+    }
+    
