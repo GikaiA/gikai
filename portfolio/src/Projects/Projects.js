@@ -34,15 +34,18 @@ function Projects() {
               highlighting collaborations for a personalized online presence.
             </p>
             <p className="technology-text">
-              Technologies Used: HTML, CSS, JavaScript, React, GetBootstrap
+              Technologies Used: HTML, CSS, JavaScript, React
             </p>
           </div>
           <div className="buttons">
             <a
-              href="https://github.com/StaticMaster/LOT-web"
+              href="https://github.com/GikaiA/legendofti"
               className="github-links"
             >
               <button className="github-button">Github</button>
+            </a> 
+            <a href="https://legendofti.netlify.app/">
+              <button className="github-button">Website</button>
             </a>
           </div>
         </div>
