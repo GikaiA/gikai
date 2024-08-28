@@ -2,7 +2,7 @@ import React from "react";
 import "./Projects.css";
 import tivid from "../videos/ti-website.mp4";
 import motivateme from "../videos/motivateme.mp4";
-import owlsgaming from "../videos/owlsgamingclub.mp4";
+import airflighttracker from '../videos/airflight-tracker.mp4';
 import ridemate from "../images/ridemate.png";
 import { useDarkMode } from "../DarkModeContext";
 
@@ -18,11 +18,43 @@ function Projects() {
       <h2 className="project-heading">Projects</h2>
       <div className="project-grid">
         <div className="project-section">
+          <p className="project-title">Airflight Tracker</p>
+          <div className="video-section">
+            <video autoPlay loop muted className="video-preview">
+              <source src={airflighttracker} type="video/mp4"></source>
+            </video>
+          </div>
+          <div className="info-section">
+            <p className="info-text">
+              Airflight Tracker is a sophisticated system designed to streamline
+              the tracking of aircrew qualifications and training progress. It
+              efficiently matches aircrew members with mission assignments and
+              training opportunities by considering critical factors such as
+              total flight hours, specialized certifications, and overall
+              experience. By employing advanced algorithms to automate this
+              process, Airflight Tracker ensures that aircrew members are
+              optimally assigned, thereby enhancing mission success rates and
+              maximizing the utilization of available resources.
+            </p>
+            <p className="technology-text">
+              Technologies Used: HTML, CSS, JavaScript, React, Node, Express, MongoDB
+            </p>
+          </div>
+          <div className="buttons">
+            <a
+              href="https://github.com/GikaiA/Airflight-Tracking-System"
+              className="github-links"
+            >
+              <button className="github-button">Github</button>
+            </a>
+          </div>
+        </div>
+        <div className="project-section">
           <p className="project-title">Legend of Ti Portfolio</p>
           <div className="video-section">
-          <video autoPlay loop muted className="video-preview">
-            <source src={tivid} type="video/mp4"></source>
-          </video>
+            <video autoPlay loop muted className="video-preview">
+              <source src={tivid} type="video/mp4"></source>
+            </video>
           </div>
           <div className="info-section">
             <p className="info-text">
@@ -34,7 +66,7 @@ function Projects() {
               highlighting collaborations for a personalized online presence.
             </p>
             <p className="technology-text">
-              Technologies Used: HTML, CSS, JavaScript, React
+              Technologies Used: HTML, CSS, JavaScript, React, React-Icons
             </p>
           </div>
           <div className="buttons">
@@ -43,7 +75,7 @@ function Projects() {
               className="github-links"
             >
               <button className="github-button">Github</button>
-            </a> 
+            </a>
             <a href="https://legendofti.netlify.app/">
               <button className="github-button">Website</button>
             </a>
@@ -52,9 +84,9 @@ function Projects() {
         <div className="project-section">
           <p className="project-title">MotivateMe</p>
           <div className="video-section">
-          <video autoPlay loop muted className="video-preview">
-            <source src={motivateme} type="video/mp4"></source>
-          </video>
+            <video autoPlay loop muted className="video-preview">
+              <source src={motivateme} type="video/mp4"></source>
+            </video>
           </div>
           <div className="info-section">
             <p className="info-text">
@@ -77,42 +109,15 @@ function Projects() {
             </a>
           </div>
         </div>
-        <div className="project-section">
-          <p className="project-title">Owls Gaming Club Website</p>
-          <div className="video-section">
-            <video autoPlay loop muted className="video-preview">
-              <source src={owlsgaming} type="video/mp4"></source>
-            </video>
-          </div>
-          <div className="info-section">
-            <p className="info-text">
-              Designed and developed a dynamic esports team website to showcase
-              achievements and enhance our gaming community presence. Created
-              dedicated sections for each game, offering performance details and
-              schedules, while ensuring user-friendly navigation and mobile
-              responsiveness for optimal accessibility.
-            </p>
-            <p className="technology-text">
-              Technologies Used: HTML, CSS, JavaScript, React
-            </p>
-          </div>
-          <div className="buttons">
-            <a
-              href="https://github.com/StaticMaster/owlsgaming-web"
-              className="github-links"
-            >
-              <button className="github-button">Github</button>
-            </a>
-          </div>
-        </div>
+        
         <div className="project-section">
           <p className="project-title">Ridemate - Rideshare App</p>
           <div className="video-section">
-          <img
-            src={ridemate}
-            alt="ridemate-screenshot"
-            className="video-preview"
-          />
+            <img
+              src={ridemate}
+              alt="ridemate-screenshot"
+              className="video-preview"
+            />
           </div>
           <div className="info-section">
             <p className="info-text">
@@ -128,7 +133,7 @@ function Projects() {
           </div>
           <div className="buttons">
             <a
-              href="https://github.com/StaticMaster/ridemate-main"
+              href="https://github.com/GikaiA/ridemate-main"
               className="github-links"
             >
               <button className="github-button">Github</button>
@@ -140,4 +145,4 @@ function Projects() {
   );
 }
 
-export default Projects
+export default Projects;

@@ -41,7 +41,7 @@ const Homepage = () => {
             className="linkedin-icon"
           />
           <SocialIcon
-            url="https://github.com/StaticMaster"
+            url="https://github.com/GikaiA"
             className="github-icon"
             bgColor="grey"
           />
