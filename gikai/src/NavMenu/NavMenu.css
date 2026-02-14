@@ -1,0 +1,28 @@
+.custom-navbar {
+  background-color: #fafafa !important;
+  color: black !important;
+}
+
+.nav-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: black !important;
+  padding-left: 10px;
+  text-decoration: none !important;
+}
+
+.nav-title:hover {
+  color: #360000 !important;
+  transition: all 0.3s cubic-bezier(0, 0, 0.23, 1) !important;
+}
+
+.navbar-button {
+  color: black !important;
+  font-size: 1.2rem;
+  margin-left: 20px;
+}
+
+.navbar-button:hover {
+  color: #360000 !important;
+  transition: all 0.3s cubic-bezier(0, 0, 0.23, 1) !important;
+}
