@@ -12,7 +12,9 @@ import { FaNodeJs } from "react-icons/fa6";
 
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import eatly from "../assets/eatly.jpg";
+import eatly from "../assets/eatly.png";
+import legend from "../assets/legendofti.png";
+import cinalog from "../assets/cinalog.png";
 
 function Landing() {
   return (
@@ -36,7 +38,7 @@ function Landing() {
         </div>
       </div>
       <div className="project-section">
-        <h1 className="project-title">Projects</h1>
+        <h1 className="project-title" id="projects">Projects</h1>
         <div className="project-grid">
           <div className="project-card">
             <Card>
@@ -88,14 +90,38 @@ function Landing() {
           </div>
           <div className="project-card">
             <Card>
-              <Card.Img variant="top" src={eatly} />
+              <Card.Img variant="top" src={cinalog} />
               <Card.Body>
                 <Card.Title>Cinalog</Card.Title>
                 <Card.Text>
-                  Cinalog is a movie and TV show recommendation web app that helps
-                  users discover new content based on their preferences.
+                  Cinalog is a movie and TV show recommendation web app that
+                  helps users discover new content based on their preferences.
                 </Card.Text>
                 <Link to="https://github.com/gikai/cinalog">
+                  <Button variant="primary" className="button-link">
+                    Github
+                  </Button>
+                </Link>
+              </Card.Body>
+            </Card>
+          </div>
+          <div className="project-card">
+            <Card>
+              <Card.Img variant="top" src={legend} />
+              <Card.Body>
+                <Card.Title>Legend of Ti</Card.Title>
+                <Card.Text>
+                  This custom portfolio website was designed and developed to
+                  highlight the unique style and brand of the creator,
+                  integrating social media and sponsor visibility enhancements
+                  to maximize engagement and revenue.
+                </Card.Text>
+                <Link to="https://legendofti.netlify.app">
+                  <Button variant="primary" className="button-link">
+                    Website
+                  </Button>
+                </Link>
+                <Link to="https://github.com/gikaia/legendofti">
                   <Button variant="primary" className="button-link">
                     Github
                   </Button>
@@ -106,7 +132,7 @@ function Landing() {
         </div>
       </div>
       <div className="skills-section">
-        <h1 className="skills-title">Skills</h1>
+        <h1 className="skills-title" id="skills">Skills</h1>
         <div className="skills-grid">
           <IoLogoJavascript className="skill-icon" />
           <FaReact className="skill-icon" />
@@ -119,7 +145,7 @@ function Landing() {
         </div>
       </div>
       <div className="contact-section">
-        <h1 className="contact-title">Contact</h1>
+        <h1 className="contact-title" id="contact">Contact</h1>
         <p className="contact-description">
           I am currently open to new opportunities. If you would like to get in
           touch, please feel free to reach out to me through email or LinkedIn.

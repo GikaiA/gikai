@@ -17,7 +17,7 @@ function NavMenu() {
             <Nav className="ms-auto">
               <>
                 <Nav.Link href="#projects" className="navbar-button">
-                  Project
+                  Projects
                 </Nav.Link>
                 <Nav.Link href="#skills" className="navbar-button">
                   Skills
