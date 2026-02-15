@@ -40,7 +40,7 @@ function Landing() {
         <div className="project-grid">
           <div className="project-card">
             <Card>
-              <Card.Img variant="top" src={eatly} width={100} />
+              <Card.Img variant="top" src={eatly} />
               <Card.Body>
                 <Card.Title>Eatly</Card.Title>
                 <Card.Text>
@@ -67,12 +67,22 @@ function Landing() {
             <Card>
               <Card.Img variant="top" src={eatly} />
               <Card.Body>
-                <Card.Title>Card Title</Card.Title>
+                <Card.Title>Portfolio V2 (This Website)</Card.Title>
                 <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card&apos;s content.
+                  Redesigned and rebuilt personal portfolio (V2) with modern
+                  UI/UX principles, implementing dark/light theme switching and
+                  responsive design.
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                <Link to="https://eatly-ci.netlify.app">
+                  <Button variant="primary" className="button-link">
+                    Website
+                  </Button>
+                </Link>
+                <Link to="https://github.com/gikai/eatly">
+                  <Button variant="primary" className="button-link">
+                    Github
+                  </Button>
+                </Link>{" "}
               </Card.Body>
             </Card>
           </div>
@@ -80,12 +90,16 @@ function Landing() {
             <Card>
               <Card.Img variant="top" src={eatly} />
               <Card.Body>
-                <Card.Title>Card Title</Card.Title>
+                <Card.Title>Cinalog</Card.Title>
                 <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card&apos;s content.
+                  Cinalog is a movie and TV show recommendation web app that helps
+                  users discover new content based on their preferences.
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                <Link to="https://github.com/gikai/cinalog">
+                  <Button variant="primary" className="button-link">
+                    Github
+                  </Button>
+                </Link>
               </Card.Body>
             </Card>
           </div>
@@ -94,14 +108,41 @@ function Landing() {
       <div className="skills-section">
         <h1 className="skills-title">Skills</h1>
         <div className="skills-grid">
-        <IoLogoJavascript className="skill-icon" />
-        <FaReact className="skill-icon" />
-        <FaHtml5 className="skill-icon" />
-        <FaCss3Alt className="skill-icon" />
-        <IoLogoFirebase className="skill-icon" />
-        <FaBootstrap className="skill-icon" />
-        <FaGithub className="skill-icon" />
-        <FaNodeJs className="skill-icon" />
+          <IoLogoJavascript className="skill-icon" />
+          <FaReact className="skill-icon" />
+          <FaHtml5 className="skill-icon" />
+          <FaCss3Alt className="skill-icon" />
+          <IoLogoFirebase className="skill-icon" />
+          <FaBootstrap className="skill-icon" />
+          <FaGithub className="skill-icon" />
+          <FaNodeJs className="skill-icon" />
+        </div>
+      </div>
+      <div className="contact-section">
+        <h1 className="contact-title">Contact</h1>
+        <p className="contact-description">
+          I am currently open to new opportunities. If you would like to get in
+          touch, please feel free to reach out to me through email or LinkedIn.
+        </p>
+        <div className="contact-buttons">
+          <button className="contact-button">
+            <a href="mailto:gikaiandrews@gmail.com" className="contact-link">
+              Email
+            </a>
+          </button>
+          <button className="contact-button">
+            <a
+              href="https://www.linkedin.com/in/gikai-andrews/"
+              className="contact-link"
+            >
+              LinkedIn
+            </a>
+          </button>
+          <button className="contact-button">
+            <a href="https://github.com/gikaia" className="contact-link">
+              Github
+            </a>
+          </button>
         </div>
       </div>
     </div>
