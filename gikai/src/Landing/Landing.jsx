@@ -15,6 +15,7 @@ import Card from "react-bootstrap/Card";
 import eatly from "../assets/eatly.png";
 import legend from "../assets/legendofti.png";
 import cinalog from "../assets/cinalog.png";
+import portfolio from "../assets/portfolio.png";
 
 function Landing() {
   return (
@@ -35,10 +36,13 @@ function Landing() {
           <Link to="https://github.com/gikaia">
             <FaGithub className="social-icon" />
           </Link>
+          <Link to="https://drive.google.com/file/d/1hHKro193IFviPJsVgIT2dRHFR5ZZE8Qe/view?usp=sharing">
+            <button className="resume-button">Resume</button>
+          </Link>
         </div>
       </div>
-      <div className="project-section">
-        <h1 className="project-title" id="projects">Projects</h1>
+      <div className="project-section" id="projects">
+        <h1 className="project-title">Projects</h1>
         <div className="project-grid">
           <div className="project-card">
             <Card>
@@ -67,7 +71,7 @@ function Landing() {
           </div>
           <div className="project-card">
             <Card>
-              <Card.Img variant="top" src={eatly} />
+              <Card.Img variant="top" src={portfolio} />
               <Card.Body>
                 <Card.Title>Portfolio V2 (This Website)</Card.Title>
                 <Card.Text>
@@ -75,12 +79,12 @@ function Landing() {
                   UI/UX principles, implementing dark/light theme switching and
                   responsive design.
                 </Card.Text>
-                <Link to="https://eatly-ci.netlify.app">
+                <Link to="https://gikaiandrews.netlify.app">
                   <Button variant="primary" className="button-link">
                     Website
                   </Button>
                 </Link>
-                <Link to="https://github.com/gikai/eatly">
+                <Link to="https://github.com/GikaiA/gikai">
                   <Button variant="primary" className="button-link">
                     Github
                   </Button>
@@ -132,7 +136,9 @@ function Landing() {
         </div>
       </div>
       <div className="skills-section">
-        <h1 className="skills-title" id="skills">Skills</h1>
+        <h1 className="skills-title" id="skills">
+          Skills
+        </h1>
         <div className="skills-grid">
           <IoLogoJavascript className="skill-icon" />
           <FaReact className="skill-icon" />
@@ -145,31 +151,33 @@ function Landing() {
         </div>
       </div>
       <div className="contact-section">
-        <h1 className="contact-title" id="contact">Contact</h1>
+        <h1 className="contact-title" id="contact">
+          Contact
+        </h1>
         <p className="contact-description">
           I am currently open to new opportunities. If you would like to get in
           touch, please feel free to reach out to me through email or LinkedIn.
         </p>
         <div className="contact-buttons">
           <button className="contact-button">
-            <a href="mailto:gikaiandrews@gmail.com" className="contact-link">
+            <Link to="mailto:gikaiandrews@gmail.com" className="contact-link">
               Email
-            </a>
+          </Link>
           </button>
           <button className="contact-button">
-            <a
-              href="https://www.linkedin.com/in/gikai-andrews/"
+            <Link to="https://www.linkedin.com/in/gikai-andrews/"
               className="contact-link"
             >
               LinkedIn
-            </a>
+            </Link>
           </button>
           <button className="contact-button">
-            <a href="https://github.com/gikaia" className="contact-link">
+            <Link to="https://github.com/gikaia" className="contact-link">
               Github
-            </a>
+            </Link>
           </button>
         </div>
+        <p className="copyright-sentence">© Gikai Andrews</p>
       </div>
     </div>
   );
