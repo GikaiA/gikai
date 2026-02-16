@@ -5,7 +5,7 @@ A modern, minimal portfolio website built with React and React Bootstrap, featur
 
 ## Overview
 
-This is a complete rebuild of my personal portfolio with a focus on clean design, improved user experience, and modern web development practices. Version 2 features a sophisticated dark mode implementation, a refined color palette, and seamless responsive design across all devices.
+This is a complete rebuild of my personal portfolio with a focus on clean design, improved user experience, and modern web development practices. Version 2 features a seamless responsive design across all devices.
 
 ## Features
 
