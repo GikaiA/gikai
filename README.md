@@ -1,6 +1,7 @@
 # Gikai Andrews Portfolio V2
 
 A modern, minimal portfolio website built with React and React Bootstrap, featuring dark/light mode theming and full mobile responsiveness.
+[Deployed Link](https://gikaiandrews.netlify.app)
 
 ## Overview
 
